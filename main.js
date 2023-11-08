@@ -1,22 +1,22 @@
-//Criando/declarando a função tocaSomPom
-function tocaSomPom(){
-    document.querySelector('#som_tecla_pom').play();
+//Declarando/Criando a função tocaSomPom com paramêtro edElementoAudio 
+function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play();
 }
-//chamando/invocando a função tocaSomPom pelo clique do botão pom
-document.querySelector('.tecla_pom').onclick = tocaSomPom;
-//criando referência constante listaDeTeclas buscando todos os itens pela classe .tecla
-const listaDeTeclas = document.querySelectorAll('.tecla');
-
-//invocando a função tocaSomPom a partir do item "0',1 botão.
-listaDeTeclas[0].onclick = tocaSomPom;
+//Criando refêrencia constante ListaDeTeclas com buscando todos os itens pela classe .tecla
+const listaDeTeclas = document.querySelectorAll(".tecla");
 
 //criando referência variável "contador" iniciando = 0
-let contador = 0; 
-
+//"enquanto algo acontecer mudou while para "for"
 //estrutura de repetição "while" significa "enquanto algo acontecer"
-while(){
-
+for(let contador = 0; < listaDeTeclas.length;let contador++);{
+    const tecla = listaDeTeclas[contador];
+    const efeito = tecla.classiList[1]; //acessa o 2° item da classe de teclas
+    const idAudio = `#som_${efeito`}; //template string
+    tecla.onclik = function(){ //Cria função anônima para chamar tocaSom
+        tocaSom(idAudio);
+ }
 }
+
 
 
 
