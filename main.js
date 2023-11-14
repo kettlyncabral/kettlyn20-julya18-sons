@@ -15,10 +15,10 @@ for(let contador = 0; contador < listaDeTeclas.length; contador++){
     tecla.onclik = function(){ //cria função anônima para chamar tocaSom
         tocaSom(idAudio);
  }
- tecla.onkeydown = function(){
+  tecla.onkeydown = function(){
     tecla.classList.add('ativa')
  }
-tecla.onkeyup = function(){
+  tecla.onkeyup = function(){
     tecla.classList.remove('ativa');
-}
+    }
 }
