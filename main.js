@@ -10,7 +10,7 @@ const listaDeTeclas = document.querySelectorAll(".tecla");
 //estrutura de repetição "while" significa "enquanto algo acontecer"
 for(let contador = 0; contador < listaDeTeclas.length; contador++){
     const tecla = listaDeTeclas[contador];
-    const efeito = tecla.classiList[1]; //acessa o 2° item da classe de teclas
+    const efeito = tecla.classList[1]; //acessa o 2° item da classe de teclas
     const idAudio = `#som_${efeito}`; //template string
     tecla.onclik = function(){ //cria função anônima para chamar tocaSom
         tocaSom(idAudio);
