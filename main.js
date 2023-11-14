@@ -8,18 +8,15 @@ const listaDeTeclas = document.querySelectorAll(".tecla");
 //criando referência variável "contador" iniciando = 0
 //"enquanto algo acontecer mudou while para "for"
 //estrutura de repetição "while" significa "enquanto algo acontecer"
-for(let contador = 0; < listaDeTeclas.length;let contador++);{
+for(let contador = 0; contador < listaDeTeclas.length; contador++){
     const tecla = listaDeTeclas[contador];
     const efeito = tecla.classiList[1]; //acessa o 2° item da classe de teclas
-    const idAudio = `#som_${efeito`}; //template string
+    const idAudio = `#som_${efeito}`; //template string
     tecla.onclik = function(){ //Cria função anônima para chamar tocaSom
         tocaSom(idAudio);
  }
+ tecla.onkeydown = function(){
+    tecla.classList.add()
 }
 
-
-
-
-
-
-                        
+}
