@@ -1,5 +1,6 @@
 //Declarando/Criando a função tocaSomPom com paramêtro edElementoAudio 
 function tocaSom(idElementoAudio){
+    //if else elemento operadores comparação
     const elemento = document.querySelector(idElementoAudio);
         if (elemento && elemento.loclname === 'auio'){
             elemento.play();
