@@ -2,7 +2,7 @@
 function tocaSom(idElementoAudio){
     //if else elemento operadores comparação
     const elemento = document.querySelector(idElementoAudio);
-        if (elemento && elemento.loclname === 'auio'){
+        if (elemento && elemento.loclname === 'audio'){
             elemento.play();
         
         }else{
